@@ -1,65 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="온나래 AI 프로젝트 - AI로 아이디어를 콘텐츠로 만드는 공간">
-  <title>온나래 AI 프로젝트</title>
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,"Noto Sans KR",sans-serif;color:#20231f;background:#fffdf7;line-height:1.6}
-    header{max-width:1100px;margin:auto;padding:24px 6%;display:flex;justify-content:space-between;align-items:center}
-    .logo{font-weight:800;font-size:1.25rem}
-    nav a{color:#20231f;text-decoration:none;margin-left:22px;font-weight:600}
-    .hero{min-height:72vh;display:grid;place-items:center;text-align:center;padding:70px 6%;background:linear-gradient(135deg,#f4f8e9,#fff5df)}
-    .hero div{max-width:760px}
-    .badge{display:inline-block;padding:7px 14px;border-radius:999px;background:#fff;font-size:.9rem;margin-bottom:20px}
-    h1{font-size:clamp(2.3rem,6vw,4.8rem);line-height:1.08;margin-bottom:22px}
-    .hero p{font-size:1.12rem;color:#5d625a;margin:auto auto 30px;max-width:620px}
-    .btn{display:inline-block;background:#263a29;color:#fff;text-decoration:none;padding:14px 24px;border-radius:12px;font-weight:700}
-    section{max-width:1050px;margin:auto;padding:80px 6%}
-    h2{font-size:2rem;margin-bottom:14px}
-    .intro{color:#686d65;margin-bottom:34px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:#fff;border:1px solid #e8e8df;border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.04)}
-    .card span{font-size:1.8rem}
-    .card h3{margin:14px 0 8px}
-    footer{text-align:center;padding:34px;color:#777;background:#f5f3ea}
-    @media(max-width:720px){nav{display:none}.cards{grid-template-columns:1fr}.hero{min-height:65vh}}
-  </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="온나래 AI 프로젝트 - AI와 콘텐츠로 농업과 지역의 가치를 연결합니다">
+<title>온나래 AI 프로젝트</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,"Noto Sans KR",sans-serif;color:#253025;background:#fffdf8;line-height:1.7}
+header{max-width:1100px;margin:auto;padding:20px 6%;display:flex;justify-content:space-between;align-items:center}.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:#3f6d43}.logo-mark{font-size:2rem}.logo small{display:block;font-size:.65rem;letter-spacing:2px;color:#8b633e}nav a{color:#253025;text-decoration:none;margin-left:22px;font-weight:700}
+.hero{padding:85px 6%;background:linear-gradient(135deg,#f2f7e8,#fff0dd);text-align:center}.hero-inner{max-width:800px;margin:auto}.brand{font-size:clamp(3rem,8vw,6rem);font-weight:900;color:#48794c;line-height:1}.brand span{color:#95613c}.tag{margin:18px 0 8px;letter-spacing:4px;font-weight:800}.hero h1{font-size:clamp(1.7rem,4vw,3rem);margin:22px 0 14px}.hero p{max-width:650px;margin:auto;color:#667066}.btn{display:inline-block;margin-top:26px;background:#477a4c;color:#fff;text-decoration:none;padding:13px 24px;border-radius:999px;font-weight:800}
+section{max-width:1050px;margin:auto;padding:75px 6%}.profile{display:grid;grid-template-columns:180px 1fr;gap:38px;align-items:center}.avatar{width:180px;height:180px;border-radius:50%;background:linear-gradient(145deg,#dce9c8,#ffe1c7);display:grid;place-items:center;font-size:5rem;border:8px solid #fff;box-shadow:0 8px 30px #0001}.eyebrow{color:#4d8051;font-weight:800}.profile h2{font-size:2.2rem;margin:4px 0 12px}.profile p{color:#616a61}.quote{margin-top:18px;padding:16px 20px;background:#f8f1e7;border-radius:16px;color:#755c44}
+h2.section-title{font-size:2rem;margin-bottom:8px}.intro{color:#6b736b;margin-bottom:28px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fff;border:1px solid #e7e8df;border-radius:20px;padding:25px;box-shadow:0 8px 28px #0000000d}.card span{font-size:2rem}.card h3{margin:12px 0 7px}.card p{font-size:.95rem;color:#6a716a}footer{text-align:center;padding:34px;background:#f3f1e7;color:#777}
+@media(max-width:760px){nav{display:none}.profile{grid-template-columns:1fr;text-align:center}.avatar{margin:auto}.cards{grid-template-columns:1fr 1fr}}@media(max-width:480px){.cards{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo">ONNARAE AI</div>
-    <nav><a href="#about">소개</a><a href="#work">하는 일</a></nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div>
-        <span class="badge">AI × CONTENT × RURAL</span>
-        <h1>아이디어를<br>콘텐츠로 만듭니다.</h1>
-        <p>생성형 AI를 활용해 농업·농촌의 이야기와 브랜드를 더 쉽고 매력적인 콘텐츠로 만드는 온나래 AI 프로젝트입니다.</p>
-        <a class="btn" href="#work">프로젝트 보기</a>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>온나래 AI 프로젝트</h2>
-      <p class="intro">AI를 어렵게 배우는 대신, 일과 일상에서 바로 활용할 수 있는 방법을 연구하고 콘텐츠로 나눕니다.</p>
-    </section>
-
-    <section id="work">
-      <h2>What I Do</h2>
-      <p class="intro">작은 아이디어에서 시작해 실제로 활용할 수 있는 결과물을 만듭니다.</p>
-      <div class="cards">
-        <article class="card"><span>🌱</span><h3>농산물 콘텐츠</h3><p>농산물과 농촌 자원을 매력적인 이야기와 홍보 콘텐츠로 바꿉니다.</p></article>
-        <article class="card"><span>✨</span><h3>생성형 AI</h3><p>이미지, 영상, 음악 등 다양한 AI 도구를 실전 중심으로 활용합니다.</p></article>
-        <article class="card"><span>📱</span><h3>SNS 브랜딩</h3><p>인스타그램과 숏폼에 맞는 콘텐츠 기획과 브랜드 메시지를 설계합니다.</p></article>
-      </div>
-    </section>
-  </main>
-
-  <footer>© 2026 ONNARAE AI PROJECT. All rights reserved.</footer>
-</body>
-</html>
+<header><div class="logo"><span class="logo-mark">🌱</span><div>온나래<small>AI PROJECT</small></div></div><nav><a href="#about">소개</a><a href="#work">콘텐츠</a></nav></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="brand"><span>온</span>나래🌿</div><div class="tag">AI PROJECT</div><h1>AI로 농업의 가치를,<br>콘텐츠로 더 넓은 세상과 연결합니다.</h1><p>생성형 AI와 SNS를 활용해 농업·농촌의 이야기와 브랜드를 쉽고 매력적인 콘텐츠로 만드는 디지털 작업실입니다.</p><a class="btn" href="#about">온나래 소개 ↓</a></div></section>
+<section id="about"><div class="profile"><div class="avatar">👩🏻‍💻</div><div><div class="eyebrow">HELLO, I'M ONNARAE</div><h2>안녕하세요. 온나래입니다. 🌱</h2><p>농업과 AI, 그리고 콘텐츠를 연결하는 <strong>농촌 브랜드 설계자이자 AI 콘텐츠 크리에이터</strong>입니다. 농산물과 지역의 이야기가 더 많은 사람에게 닿을 수 있도록 이미지·영상·SNS 콘텐츠를 기획하고, 생성형 AI를 일과 교육에 활용하는 방법을 연구합니다.</p><div class="quote">“농업의 이야기가 좋은 콘텐츠가 되고, 좋은 콘텐츠가 새로운 연결을 만듭니다.”</div></div></div></section>
+<section id="work"><h2 class="section-title">온나래가 하는 일</h2><p class="intro">아이디어에서 실제 활용 가능한 콘텐츠까지 함께 설계합니다.</p><div class="cards">
+<article class="card"><span>✨</span><h3>AI 콘텐츠 제작</h3><p>이미지·영상·음악 등 생성형 AI를 활용한 콘텐츠를 만듭니다.</p></article>
+<article class="card"><span>🍅</span><h3>농산물 홍보</h3><p>농산물과 농촌 자원을 이야기와 디지털 홍보물로 바꿉니다.</p></article>
+<article class="card"><span>📱</span><h3>SNS 브랜딩</h3><p>인스타그램·숏폼 중심의 메시지와 콘텐츠 흐름을 설계합니다.</p></article>
+<article class="card"><span>🎓</span><h3>교육 · 컨설팅</h3><p>AI 콘텐츠 제작과 농업 홍보를 실전 중심으로 교육합니다.</p></article>
+</div></section>
+</main><footer>© 2026 ONNARAE AI PROJECT. All rights reserved.</footer>
+</body></html>
